@@ -275,11 +275,25 @@ background-position: top left;
     width: 100%;
     position: relative;
 }
+.play-games-right-img{
+    width: 100%;
+    position: relative;
+}
 
 .play-games-left-img .top-img img{
     width: 100%;
 }
+.play-games-right-img .top-img img{
+    width: 100%;
+}
 .play-games-left-img .bottom-img{
+    position: absolute;
+    bottom: 0;
+    left: -89px;
+    width: 200px;
+    height: 150px;
+}
+.play-games-right-img .bottom-img{
     position: absolute;
     bottom: 0;
     right: -89px;
@@ -288,6 +302,9 @@ background-position: top left;
 }
 
 .play-games-left-img .bottom-img img{
+    width: 100%;
+}
+.play-games-right-img .bottom-img img{
     width: 100%;
 }
 
@@ -379,8 +396,18 @@ background-position: top left;
     .play-games-left-img{
         order: 2;
     }
+    .play-games-right-img{
+        order: 2;
+    }
 
     .play-games-left-img .bottom-img{
+        position: absolute;
+        width: 150px;
+        bottom: -40px;
+        left: -50px;
+        height: 150px;
+    }
+    .play-games-right-img .bottom-img{
         position: absolute;
         width: 150px;
         bottom: -40px;
