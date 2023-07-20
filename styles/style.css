@@ -14,7 +14,7 @@
     margin: 0 auto;
 }
 
-
+/* Header style */
 header{
 background: #FFF;
 box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -91,7 +91,7 @@ background-position: top left;
     height: 17px;
 }
 
-/* header banner section design  */
+/* Banner Style  */
 
 .banner-container{
     max-width: 1440px;
@@ -160,4 +160,139 @@ background-position: top left;
     width: 100%;
     object-fit: cover;
     margin-top: 20px;
+}
+
+/* funny Videos */
+.online-games-section{
+    margin-top: 50px;
+}
+.games-content{
+    text-align: center;
+}
+.games-content h2{
+    color: #0B0223;
+    font-size: 32px;;
+    font-weight: 700;
+}
+.games-content p{
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    margin-bottom: 30px;
+    margin-top: 4px;
+}
+
+.default-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.games-card-container{
+    padding: 0px 135px;
+    display: flex;
+    gap: 24px;
+}
+
+
+.games-card-img > img{
+    width: 100%;
+    
+}
+
+.games-card-img{
+    position: relative;
+    margin-bottom: 15px;
+    
+    
+}
+
+.img-hover-style img{
+    width: 34px;
+    height: 34px;
+    
+}
+
+.games-card-img .img-hover-style{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    
+}
+
+.games-card:hover .img-hover-style{
+    transition: 0.1s;
+    border: 3px solid #ff42a5;
+    opacity: 1;
+    cursor: pointer;
+    background: linear-gradient(to right top, #051937ae, #051d40a7, #04224aae, #032654bb, #022b5ea6);
+    color: #fff;
+}
+
+.games-card-caption p{
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    header{
+        background-image: none;
+        background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    }
+
+    .nav-menu > ul{
+        flex-direction: column;
+        margin-top: 20px;
+        width: 240px;
+    }
+
+
+    .banner-container{
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+    .banner-left-content{
+        order: 2;
+        padding: 100px 0px;
+    }
+    .banner-right-img img{
+        width: 100%;
+    }
+
+      .games-card-container{
+        flex-direction: column;
+        padding: 0px 40px;
+    }
 }
